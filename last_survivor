@@ -1,0 +1,10 @@
+def last_survivor(letters, coords): 
+    listt=[]
+    for i in range(len(letters)):
+        listt.append(letters[i])
+   #for i in range(len(coords)):
+    #     letters.replace(letters[coords[i]],"")
+    for i in range(len(coords)):
+        listt.pop(coords[i])
+    return "".join(listt)    
+   
