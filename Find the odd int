@@ -1,0 +1,13 @@
+def find_it(seq):
+    seque=list(set(seq))
+    c=0
+    
+    for i in range(len(seque)):
+        for j in range(len(seq)):
+            if(seque[i]==seq[j]):
+                c=c+1
+        if(c%2!=0):
+            z=seque[i]
+        c=0    
+    return z   
+                    
