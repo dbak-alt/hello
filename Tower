@@ -1,0 +1,7 @@
+def tower_builder(n_floors):
+        tower=[]
+        for i in range(1,n_floors+1):
+                n=str("*"*(2*i-1))
+                z=n.center(2*n_floors-1)
+                tower.append(z)  
+        return tower      
