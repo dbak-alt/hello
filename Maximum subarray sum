@@ -1,0 +1,11 @@
+def max_sequence(arr):
+    listt=list(arr)
+    max=sum(arr)
+    for i in range(len(arr)):
+        for j in range(len(arr),i,-1):
+            lis=listt[i:j]
+            if(sum(lis)>max):
+                max=sum(lis)
+    if max<0:
+        max=0
+    return max   
