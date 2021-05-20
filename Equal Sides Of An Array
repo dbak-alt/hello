@@ -1,0 +1,9 @@
+def find_even_index(arr):
+    lis=list(arr)
+    s=len(arr)
+    z=0
+    for i in range(s):
+        if(sum(lis[0:i])==sum(lis[i+1:s])):
+            return i
+    return -1    
+          
