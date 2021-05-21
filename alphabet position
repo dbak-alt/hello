@@ -1,0 +1,9 @@
+def alphabet_position(text):
+    a=text.lower()
+    lis=[]
+    for x in a:
+        if x.isalpha():
+            z=ord(x)-96
+            lis.append(str(z))
+    return ' '.join(lis)          
+         
