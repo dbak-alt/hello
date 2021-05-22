@@ -1,0 +1,12 @@
+def unique_in_order(iterable):
+    lis=[]
+    lisit=list(iterable)
+    if len(lisit)!=0:
+        lis.append(lisit[0])
+    else:
+        return lisit
+    for x in range(len(lisit)-1):
+        if(lisit[x]!=lisit[x+1]):
+            lis.append(lisit[x+1])
+    return lis        
+    
