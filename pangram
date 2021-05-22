@@ -1,0 +1,15 @@
+import string
+
+def is_pangram(s):
+    t=list(s)
+    alp=[]
+    all=[]    
+    for x in t:
+        if(x.isalpha()):
+            alp.append(x)
+    for x in alp:
+        all.append(x.lower())
+    if(len(set(all))==26):
+        return True
+    return False
+    
