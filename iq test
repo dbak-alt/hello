@@ -1,0 +1,14 @@
+def iq_test(numbers):
+    odd=[]
+    even=[]
+    n=numbers.split(" ")
+    for i in range(0,len(n)):
+        if(int(n[i])%2==0):
+            even.append(str(i+1))
+        else:
+            odd.append(str(i+1))
+    if(len(odd)<len(even)):
+         z="".join(odd)
+    else:
+        z="".join(even)
+    return int(z)  
