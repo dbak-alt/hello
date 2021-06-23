@@ -1,0 +1,23 @@
+def travel(r, z):
+    lis=r.split(',')
+    new=[]
+    finall=[]
+    num=""
+    number=[]
+    for x in lis:
+        t=x[-8:len(x)+1]
+        if(t==z):
+            l=x[0:len(x)-8]
+            
+            new.append(x[0:len(x)-8])
+    for x in new:
+        for j in x:
+            if(j.isdigit()):
+                num=num+j
+        finall.append(x[len(num)+1:len(x)-1])
+        number.append(num)
+        
+        num=""
+        
+    str=z+ ":"+ ",".join(finall)+"/"+",".join(number)
+    return str
