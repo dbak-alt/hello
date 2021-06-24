@@ -1,0 +1,12 @@
+def two_sum(number, target):
+    lis=[]
+    for x in range(0,len(number)):
+        sum=0
+        for y in range(0,len(number)):
+            if(x!=y):
+                sum=number[x]+number[y]
+            if(sum==target):
+                lis.append(x)
+                lis.append(y)
+                return lis
+    
