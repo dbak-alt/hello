@@ -1,0 +1,15 @@
+def bingo(ticket,win):
+    z=0
+    c=0
+    for x in ticket:
+        t=x[1]
+        for i in x[0]:
+            if(ord(i)==t):
+                c=1
+                break
+        if(c==1):
+            z=z+1
+            c=0
+    if(z>=win):
+        return "Winner!"
+    return "Loser!"
