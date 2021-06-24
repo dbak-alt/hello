@@ -1,0 +1,20 @@
+def highest_rank(arr):
+    lis=set(arr)
+    max=1
+    fin=[]
+    for x in lis:
+        if(arr.count(x)>max):
+            max=arr.count(x)
+    for x in lis:
+        if(arr.count(x)==max):
+            fin.append(x)
+            
+            
+    if(len(fin)>1):
+        fin.sort()
+        return fin[-1]
+    return fin[0]
+            
+            
+            
+            
