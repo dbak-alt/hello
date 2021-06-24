@@ -1,0 +1,9 @@
+def letter_count(s):
+    lis=set(s)
+    l={}
+    for x in lis:
+        t=s.count(x)
+        l[x]=t
+    return l    
+        
+   
